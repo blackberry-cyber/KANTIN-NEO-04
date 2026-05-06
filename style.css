@@ -1,0 +1,107 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f6fa;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    background: #1565c0;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.btn-pembeli {
+    width: 80%;
+    padding: 24px;
+    font-size: 28px;
+    margin: 10px;
+    background: #00b1e2;
+    color: white;
+    border-radius: 12px;
+}
+
+.btn-owner {
+    width: 80%;
+    padding: 8px;
+    font-size: 16px;
+    margin: 10px;
+    background: #263238;
+    color: white;
+    border-radius: 10px;
+}
+
+.screen {
+    padding: 15px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    background: white;
+    margin: 8px 0;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #1565c0;
+    color: white;
+}
+
+.menu-item span {
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
+}
+
+.back-btn {
+    position: fixed;
+    bottom: 70px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #263238;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+#qr {
+    margin-top: 20px;
+    text-align: center;
+}

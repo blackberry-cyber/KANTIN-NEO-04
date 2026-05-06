@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KANTIN NEO 04</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>KANTIN NEO 04</h1>
+
+<!-- LOGIN -->
+<div id="login" class="login-container">
+    <button class="btn-pembeli" onclick="login('pembeli')">Pembeli</button>
+    <button class="btn-owner" onclick="login('penjual')">Owner</button>
+</div>
+
+<!-- PEMBELI -->
+<div id="pembeli" class="screen" style="display:none;">
+    <h2>Menu</h2>
+    <div id="menu"></div>
+
+    <div class="bottom-bar">
+        <span id="total">Rp 0</span>
+        <button onclick="bayar()">Bayar</button>
+    </div>
+
+    <div id="qr"></div>
+
+    <button class="back-btn" onclick="kembali()">⬅</button>
+</div>
+
+<!-- OWNER -->
+<div id="penjual" class="screen" style="display:none;">
+    <h2>Dashboard</h2>
+
+    <div class="nav">
+        <button onclick="showMenu()">Menu</button>
+        <button onclick="showLaporan()">Laporan</button>
+        <button onclick="downloadExcel()">Download</button>
+    </div>
+
+    <div id="content"></div>
+
+    <button class="back-btn" onclick="kembali()">⬅</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

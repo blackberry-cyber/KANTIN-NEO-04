@@ -51,12 +51,13 @@ let menu = [
 let cart = [];
 let total = 0;
 let laporan = [];
+let lastTotal = 0;
 
 function rupiah(x){
     return new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR"}).format(x);
 }
 
-/* MENU TAMPIL */
+/* TAMPIL MENU */
 const menuDiv = document.getElementById("menu");
 
 menu.forEach(item=>{
@@ -110,7 +111,7 @@ window.kurang = function(item){
     }
 }
 
-/* QRIS */
+/* TAMPIL QR + SCANNER */
 window.tampilQR = function(total){
     const qrDiv = document.getElementById("qr");
 
@@ -118,14 +119,10 @@ window.tampilQR = function(total){
         <h3>Scan QRIS</h3>
         <img src="qris.jpeg" width="250">
         <p>${rupiah(total)}</p>
-        <button onclick="konfirmasi()">Saya Sudah Bayar</button>
+        <div id="reader" style="width:300px; margin:auto;"></div>
     `;
-}
 
-/* KONFIRMASI */
-window.konfirmasi = function(){
-    alert("Pembayaran dikonfirmasi");
-    document.getElementById("qr").innerHTML = "";
+    startScanner();
 }
 
 /* BAYAR */
@@ -136,15 +133,35 @@ window.bayar = function(){
     }
 
     tampilQR(total);
-
-    laporan.push({
-        tanggal:new Date().toLocaleString(),
-        total:total
-    });
+    lastTotal = total;
 
     cart = [];
     total = 0;
     document.getElementById("total").innerText = "Rp 0";
+}
+
+/* QR SCANNER */
+function startScanner(){
+    const html5QrCode = new Html5Qrcode("reader");
+
+    html5QrCode.start(
+        { facingMode: "environment" },
+        { fps: 10, qrbox: 250 },
+        (decodedText) => {
+            alert("Pembayaran berhasil (QR ter-scan)");
+
+            laporan.push({
+                tanggal:new Date().toLocaleString(),
+                total:lastTotal
+            });
+
+            html5QrCode.stop();
+            document.getElementById("reader").innerHTML = "";
+            document.getElementById("qr").innerHTML = "";
+        }
+    ).catch(err=>{
+        console.log(err);
+    });
 }
 
 /* OWNER */

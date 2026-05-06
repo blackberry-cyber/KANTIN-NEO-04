@@ -22,17 +22,17 @@ h1 {
 
 .btn-pembeli {
     width: 80%;
-    padding: 24px;
-    font-size: 28px;
+    padding: 18px;
+    font-size: 20px;
     margin: 10px;
-    background: #00b1e2;
+    background: #1565c0;
     color: white;
     border-radius: 12px;
 }
 
 .btn-owner {
     width: 80%;
-    padding: 8px;
+    padding: 14px;
     font-size: 16px;
     margin: 10px;
     background: #263238;

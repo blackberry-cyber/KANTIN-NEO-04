@@ -2,21 +2,21 @@
 
 // DATA MENU ASLI LENGKAP (15 Menu)
 const daftarMenu = [
-    { id: 1, nama: "Es Jeruk", harga: 7000, ikon: "fa-solid fa-glass-water text-orange-400", stok: 40 },
-    { id: 2, nama: "Air Mineral Vit", harga: 3000, ikon: "fa-solid fa-bottle-water text-blue-400", stok: 50 },
-    { id: 3, nama: "Aqua", harga: 5000, ikon: "fa-solid fa-bottle-water text-blue-500", stok: 30 },
-    { id: 4, nama: "Soto", harga: 12000, ikon: "fa-solid fa-bowl-food text-amber-600", stok: 20 },
-    { id: 5, nama: "Sop Ayam", harga: 12000, ikon: "fa-solid fa-bowl-soup text-yellow-600", stok: 15 },
-    { id: 6, nama: "Ayam Mentega", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-amber-700", stok: 15 },
-    { id: 7, nama: "Ayam Madu", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-yellow-500", stok: 12 },
-    { id: 8, nama: "Ayam Kipas", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-orange-500", stok: 10 },
-    { id: 9, nama: "Ayam Geprek", harga: 15000, ikon: "fa-solid fa-fire text-red-500", stok: 25 },
-    { id: 10, nama: "Ayam Bumbu Iseng", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-indigo-500", stok: 8 },
-    { id: 11, nama: "Katsu", harga: 14000, ikon: "fa-solid fa-utensils text-slate-500", stok: 15 },
+    { id: 1, nama: "Es Jeruk", harga: 7000, ikon: "fa-solid fa-glass-water text-orange-400", stok: 100 },
+    { id: 2, nama: "Air Mineral Vit", harga: 3000, ikon: "fa-solid fa-bottle-water text-blue-400", stok: 100 },
+    { id: 3, nama: "Aqua", harga: 5000, ikon: "fa-solid fa-bottle-water text-blue-500", stok: 100 },
+    { id: 4, nama: "Soto", harga: 12000, ikon: "fa-solid fa-bowl-food text-amber-600", stok: 100 },
+    { id: 5, nama: "Sop Ayam", harga: 12000, ikon: "fa-solid fa-bowl-soup text-yellow-600", stok: 100 },
+    { id: 6, nama: "Ayam Mentega", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-amber-700", stok: 100 },
+    { id: 7, nama: "Ayam Madu", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-yellow-500", stok: 100 },
+    { id: 8, nama: "Ayam Kipas", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-orange-500", stok: 100 },
+    { id: 9, nama: "Ayam Geprek", harga: 15000, ikon: "fa-solid fa-fire text-red-500", stok: 100 },
+    { id: 10, nama: "Ayam Bumbu Iseng", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-indigo-500", stok: 100 },
+    { id: 11, nama: "Katsu", harga: 14000, ikon: "fa-solid fa-utensils text-slate-500", stok: 100 },
     { id: 12, nama: "Mendoan", harga: 1500, ikon: "fa-solid fa-cheese text-yellow-400", stok: 100 },
-    { id: 13, nama: "Tahu Tempe Penyet", harga: 8000, ikon: "fa-solid fa-pepper-hot text-red-600", stok: 20 },
-    { id: 14, nama: "Ati Goreng", harga: 10000, ikon: "fa-solid fa-bacon text-red-700", stok: 10 },
-    { id: 15, nama: "Nasgor", harga: 12000, ikon: "fa-solid fa-plate-wheat text-amber-500", stok: 30 }
+    { id: 13, nama: "Tahu Tempe Penyet", harga: 8000, ikon: "fa-solid fa-pepper-hot text-red-600", stok: 100 },
+    { id: 14, nama: "Ati Goreng", harga: 10000, ikon: "fa-solid fa-bacon text-red-700", stok: 100 },
+    { id: 15, nama: "Nasgor", harga: 12000, ikon: "fa-solid fa-plate-wheat text-amber-500", stok: 100 }
 ];
 
 // Memanggil langsung file gambar QRIS lokal dari satu folder yang sama

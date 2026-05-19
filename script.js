@@ -24,8 +24,6 @@ const qrisImageBase64 = "qris.jpeg";
 
 // Array penampung riwayat transaksi ril di sisi Owner/Kasir
 let riwayatTransaksi = [
-    { tanggal: "19/05/2026 14:12", deskripsi: "1x Ayam Geprek, 1x Es Jeruk", total: 22000 },
-    { tanggal: "19/05/2026 15:30", deskripsi: "2x Soto, 2x Aqua", total: 34000 }
 ];
 
 let keranjang = {};

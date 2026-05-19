@@ -1,107 +1,56 @@
+/* style.css */
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f5f6fa;
-    margin: 0;
-    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1 {
-    background: #1565c0;
-    color: white;
-    padding: 15px;
-    margin: 0;
-    text-align: center;
+/* Animasi transisi halaman */
+.screen {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    display: block;
 }
 
-.login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 80px;
+.screen.hidden {
+    display: none !important;
+    opacity: 0;
 }
 
-.btn-pembeli {
-    width: 80%;
-    padding: 18px;
-    font-size: 20px;
-    margin: 10px;
-    background: #1565c0;
-    color: white;
-    border-radius: 12px;
+/* Efek hover untuk menu card */
+.menu-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.btn-owner {
-    width: 80%;
-    padding: 14px;
-    font-size: 16px;
-    margin: 10px;
-    background: #263238;
-    color: white;
+.menu-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Animasi QR Code */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Custom scrollbar UMP Style */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
     border-radius: 10px;
 }
 
-.screen {
-    padding: 15px;
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
 }
 
-#menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-item {
-    background: white;
-    margin: 8px 0;
-    padding: 15px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-}
-
-button {
-    border: none;
-    padding: 8px 12px;
-    border-radius: 8px;
-    background: #1565c0;
-    color: white;
-}
-
-.menu-item span {
-    margin: 0 12px;
-    font-weight: bold;
-}
-
-.bottom-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    box-shadow: 0 -3px 10px rgba(0,0,0,0.2);
-}
-
-.back-btn {
-    position: fixed;
-    bottom: 70px;
-    left: 15px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #263238;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 0;
-}
-
-#qr {
-    margin-top: 20px;
-    text-align: center;
+::-webkit-scrollbar-thumb:hover {
+    background: #1e3a8a;
 }

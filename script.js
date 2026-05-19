@@ -6,7 +6,7 @@ const daftarMenu = [
     { id: 2, nama: "Air Mineral Vit", harga: 3000, ikon: "fa-solid fa-bottle-water text-blue-400", stok: 100 },
     { id: 3, nama: "Aqua", harga: 5000, ikon: "fa-solid fa-bottle-water text-blue-500", stok: 100 },
     { id: 4, nama: "Soto", harga: 12000, ikon: "fa-solid fa-bowl-food text-amber-600", stok: 100 },
-    { id: 5, nama: "Sop Ayam", harga: 12000, ikon: "fa-solid fa-bowl-soup text-red-600", stok: 100 },
+    { id: 5, nama: "Sop Ayam", harga: 12000, ikon: "fa-solid fa-bowl-soup text-yellow-600", stok: 100 },
     { id: 6, nama: "Ayam Mentega", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-amber-700", stok: 100 },
     { id: 7, nama: "Ayam Madu", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-yellow-500", stok: 100 },
     { id: 8, nama: "Ayam Kipas", harga: 12000, ikon: "fa-solid fa-drumstick-bite text-orange-500", stok: 100 },
